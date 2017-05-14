@@ -9,17 +9,17 @@ sqlite，realm等文件，支持AirDrop，微信QQ分享后查看。
 例如：如果你觉得自己应用中的数据库文件写的有问题，可以直接将对应的db或realm文件通过AirDrop分享到电脑后，然后通过相关应用直接输入sql语句进行debug。
 
 ```
-#import "LJ_FileTool.h"
+#import "SandBoxFileTool.h"
 
 //点击事件中调用
 - (IBAction)click:(id)sender {
-    //[[LJ_FileTool sharedTool] setOpenLog:YES];是否开启控制台打印文件路径。不用可自行忽略
-    [[LJ_FileTool sharedTool] autoOpenCloseApplicationDiskDirectoryPanel];
+    //[[SandBoxFileTool sharedTool] setOpenLog:YES];是否开启控制台打印文件路径。不用可自行忽略
+    [[SandBoxFileTool sharedTool] autoOpenCloseApplicationDiskDirectoryPanel];
 }
 ```
 #### 安装
 ```
-pod install "LJ_FileTool"
+pod  "SandBoxFileTool"
 ```
 
 #### 部分样例
