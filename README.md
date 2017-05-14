@@ -11,13 +11,21 @@ sqlite，realm等文件，支持AirDrop，微信QQ分享后查看。
 例如：如果你觉得自己应用中的数据库文件写的有问题，可以直接将对应的db或realm文件通过AirDrop分享到电脑后，然后通过相关应用直接输入sql语句进行debug。
 
 ```
-#import "SandBoxPreviewTool.h"
+#import <SandBoxPreviewTool.h>
 
 //点击事件中调用
 - (IBAction)click:(id)sender {
     //[[SandBoxPreviewTool sharedTool] setOpenLog:YES];是否开启控制台打印文件路径。不用可自行忽略
     [[SandBoxPreviewTool sharedTool] autoOpenCloseApplicationDiskDirectoryPanel];
 }
+```
+
+查看文件MD5值
+```
+#import <LJ_FileInfo.h>
+
+//xx_filePath 本地沙盒文件路径（不能设置为文件夹路径）
+[LJ_FileInfo getFileMD5WithPath: xx_filePath];
 ```
 #### 安装
 ```
