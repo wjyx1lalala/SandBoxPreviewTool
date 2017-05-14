@@ -7,18 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LJ_FileTool.h"
+#import "SandBoxPreviewTool.h"
 #import "LJ_DirToolNavigatorController.h"
 
-@interface LJ_FileTool ()
+@interface SandBoxPreviewTool ()
 
 @property (nonatomic,strong)LJ_DirToolNavigatorController * navVC;
 
 @end
 
-@implementation LJ_FileTool
+@implementation SandBoxPreviewTool
 
-static LJ_FileTool *_singleton;
+static SandBoxPreviewTool *_singleton;
 
 + (instancetype)sharedTool{
     static dispatch_once_t onceToken;

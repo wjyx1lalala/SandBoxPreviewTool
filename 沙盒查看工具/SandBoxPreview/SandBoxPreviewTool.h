@@ -4,11 +4,19 @@
 //
 //  Created by nuomi on 2017/2/7.
 //  Copyright © 2017年 xgyg. All rights reserved.
-//  应用程序文件调试系统
+//  沙盒预览工具 程序磁盘文件调试系统
+//  Usage
+/*
+ step1:
+ #import "SandBoxPreviewTool.h"
+ 
+ step2:
+ [[SandBoxPreviewTool sharedTool] autoOpenCloseApplicationDiskDirectoryPanel];
+ */
 
 #import <Foundation/Foundation.h>
 
-@interface LJ_FileTool : NSObject
+@interface SandBoxPreviewTool : NSObject
 
 
 @property (nonatomic,assign)BOOL openLog;//开启log打印文件路径

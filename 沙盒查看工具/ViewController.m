@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-#import "LJ_FileTool.h"
+#import "SandBoxPreviewTool.h"
 
 @interface ViewController ()
 
@@ -22,8 +22,8 @@
 }
 
 - (IBAction)click:(id)sender {
-    [[LJ_FileTool sharedTool] setOpenLog:YES];
-    [[LJ_FileTool sharedTool] autoOpenCloseApplicationDiskDirectoryPanel];
+    [[SandBoxPreviewTool sharedTool] setOpenLog:YES];
+    [[SandBoxPreviewTool sharedTool] autoOpenCloseApplicationDiskDirectoryPanel];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,7 +8,7 @@
 
 #import "LJ_FileInfoController.h"
 #import "LJ_FileInfo.h"
-#import "LJ_FileTool.h"
+#import "SandBoxPreviewTool.h"
 //屏幕最小值
 #define MIN_Screen ([UIScreen mainScreen].bounds.size.width <  [UIScreen mainScreen].bounds.size.height ? [UIScreen mainScreen].bounds.size.width : [UIScreen mainScreen].bounds.size.height)
 
@@ -33,7 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpUI];
-    if ([LJ_FileTool sharedTool].openLog) {
+    if ([SandBoxPreviewTool sharedTool].openLog) {
       NSLog(@"%@",self.filePath);
     }
 }
