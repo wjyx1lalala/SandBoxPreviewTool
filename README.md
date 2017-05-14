@@ -6,6 +6,8 @@ json，plist，html，css，log日志，图片等支持应用内查看。
 
 sqlite，realm等文件，支持AirDrop，微信QQ分享后查看。
 
+附带文件MD5信息，适合文件下载后查看本地文件信息，校验文件完整性。
+
 例如：如果你觉得自己应用中的数据库文件写的有问题，可以直接将对应的db或realm文件通过AirDrop分享到电脑后，然后通过相关应用直接输入sql语句进行debug。
 
 ```
