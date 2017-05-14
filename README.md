@@ -1,4 +1,4 @@
-# SandBoxFileTool
+# SandBoxPreviewTool
 
 ### 一两行代码就能查看ios沙盒文件。debug好帮手
 
@@ -9,17 +9,17 @@ sqlite，realm等文件，支持AirDrop，微信QQ分享后查看。
 例如：如果你觉得自己应用中的数据库文件写的有问题，可以直接将对应的db或realm文件通过AirDrop分享到电脑后，然后通过相关应用直接输入sql语句进行debug。
 
 ```
-#import "SandBoxFileTool.h"
+#import "SandBoxPreviewTool.h"
 
 //点击事件中调用
 - (IBAction)click:(id)sender {
-    //[[SandBoxFileTool sharedTool] setOpenLog:YES];是否开启控制台打印文件路径。不用可自行忽略
-    [[SandBoxFileTool sharedTool] autoOpenCloseApplicationDiskDirectoryPanel];
+    //[[SandBoxPreviewTool sharedTool] setOpenLog:YES];是否开启控制台打印文件路径。不用可自行忽略
+    [[SandBoxPreviewTool sharedTool] autoOpenCloseApplicationDiskDirectoryPanel];
 }
 ```
 #### 安装
 ```
-pod  "SandBoxFileTool"
+pod  "SandBoxPreviewTool"
 ```
 
 #### 部分样例
