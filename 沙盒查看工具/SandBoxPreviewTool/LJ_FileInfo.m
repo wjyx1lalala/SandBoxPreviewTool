@@ -77,6 +77,9 @@ done:
 
 + (NSString*)getFileMD5WithPath:(NSString*)path
 {
+    if (!path) {
+        return @"";
+    }
     return (__bridge_transfer NSString *)FileMD5HashCreateWithPath((__bridge CFStringRef)path, FileHashDefaultChunkSizeForReadingData);
 }
 

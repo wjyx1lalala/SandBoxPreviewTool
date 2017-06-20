@@ -8,7 +8,7 @@
 
 #import "LJ_DirToolNavigatorController.h"
 #import "LJ_HomeDirViewController.h"
-
+#import "SuspensionButton.h"
 @interface LJ_DirToolNavigatorController ()<UIGestureRecognizerDelegate>
 
 @end
@@ -30,6 +30,15 @@
     navBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor colorWithRed:0.356 green:0.356 blue:0.356 alpha:1], NSFontAttributeName : [UIFont systemFontOfSize:17]};
     navBar.tintColor = [UIColor colorWithRed:0.356 green:0.356 blue:0.356 alpha:1];
     navBar.barTintColor = [UIColor whiteColor];
+    
+    SuspensionButton * button = [[SuspensionButton alloc] initWithFrame:CGRectMake(-5, [UIScreen mainScreen].bounds.size.height/2 , 50, 50) color:[UIColor colorWithRed:135/255.0 green:216/255.0 blue:80/255.0 alpha:1]];
+    button.leanType = SuspensionViewLeanTypeEachSide;
+    [button addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void)dismiss{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

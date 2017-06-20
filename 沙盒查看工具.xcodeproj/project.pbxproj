@@ -7,43 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC62B9401EC91E25004C4A10 /* back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC62B92F1EC91E25004C4A10 /* back_icon@2x.png */; };
-		DC62B9411EC91E25004C4A10 /* back_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC62B9301EC91E25004C4A10 /* back_icon@3x.png */; };
-		DC62B9421EC91E25004C4A10 /* GenericFolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC62B9311EC91E25004C4A10 /* GenericFolderIcon.png */; };
-		DC62B9431EC91E25004C4A10 /* lj_Pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = DC62B9321EC91E25004C4A10 /* lj_Pictures.png */; };
-		DC62B9441EC91E25004C4A10 /* lj_unknow_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC62B9331EC91E25004C4A10 /* lj_unknow_icon.png */; };
-		DC62B9451EC91E25004C4A10 /* LJ_DirToolNavigatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC62B9351EC91E25004C4A10 /* LJ_DirToolNavigatorController.m */; };
-		DC62B9461EC91E25004C4A10 /* LJ_FileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC62B9371EC91E25004C4A10 /* LJ_FileInfo.m */; };
-		DC62B9471EC91E25004C4A10 /* LJ_FileInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC62B9391EC91E25004C4A10 /* LJ_FileInfoController.m */; };
-		DC62B9481EC91E25004C4A10 /* LJ_HomeDirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC62B93B1EC91E25004C4A10 /* LJ_HomeDirViewController.m */; };
-		DC62B9491EC91E25004C4A10 /* LJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC62B93D1EC91E25004C4A10 /* LJAlertView.m */; };
-		DC62B94A1EC91E25004C4A10 /* SandBoxPreviewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DC62B93F1EC91E25004C4A10 /* SandBoxPreviewTool.m */; };
 		DCCE721E1EC8F239008E576F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE721D1EC8F239008E576F /* main.m */; };
 		DCCE72211EC8F239008E576F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE72201EC8F239008E576F /* AppDelegate.m */; };
 		DCCE72241EC8F239008E576F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE72231EC8F239008E576F /* ViewController.m */; };
 		DCCE72271EC8F239008E576F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCE72251EC8F239008E576F /* Main.storyboard */; };
 		DCCE72291EC8F239008E576F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCCE72281EC8F239008E576F /* Assets.xcassets */; };
 		DCCE722C1EC8F239008E576F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCE722A1EC8F239008E576F /* LaunchScreen.storyboard */; };
+		DCE840821EF8BE3A00D8EEBD /* back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE840711EF8BE3A00D8EEBD /* back_icon@2x.png */; };
+		DCE840831EF8BE3A00D8EEBD /* back_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE840721EF8BE3A00D8EEBD /* back_icon@3x.png */; };
+		DCE840841EF8BE3A00D8EEBD /* GenericFolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE840731EF8BE3A00D8EEBD /* GenericFolderIcon.png */; };
+		DCE840851EF8BE3A00D8EEBD /* lj_Pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE840741EF8BE3A00D8EEBD /* lj_Pictures.png */; };
+		DCE840861EF8BE3A00D8EEBD /* lj_unknow_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE840751EF8BE3A00D8EEBD /* lj_unknow_icon.png */; };
+		DCE840871EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE840771EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.m */; };
+		DCE840881EF8BE3A00D8EEBD /* LJ_FileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE840791EF8BE3A00D8EEBD /* LJ_FileInfo.m */; };
+		DCE840891EF8BE3A00D8EEBD /* LJ_FileInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8407B1EF8BE3A00D8EEBD /* LJ_FileInfoController.m */; };
+		DCE8408A1EF8BE3A00D8EEBD /* LJ_HomeDirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8407D1EF8BE3A00D8EEBD /* LJ_HomeDirViewController.m */; };
+		DCE8408B1EF8BE3A00D8EEBD /* LJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8407F1EF8BE3A00D8EEBD /* LJAlertView.m */; };
+		DCE8408C1EF8BE3A00D8EEBD /* SandBoxPreviewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE840811EF8BE3A00D8EEBD /* SandBoxPreviewTool.m */; };
+		DCE8408F1EF8BE4600D8EEBD /* SuspensionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8408E1EF8BE4600D8EEBD /* SuspensionButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC62B92F1EC91E25004C4A10 /* back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@2x.png"; sourceTree = "<group>"; };
-		DC62B9301EC91E25004C4A10 /* back_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@3x.png"; sourceTree = "<group>"; };
-		DC62B9311EC91E25004C4A10 /* GenericFolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GenericFolderIcon.png; sourceTree = "<group>"; };
-		DC62B9321EC91E25004C4A10 /* lj_Pictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lj_Pictures.png; sourceTree = "<group>"; };
-		DC62B9331EC91E25004C4A10 /* lj_unknow_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lj_unknow_icon.png; sourceTree = "<group>"; };
-		DC62B9341EC91E25004C4A10 /* LJ_DirToolNavigatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_DirToolNavigatorController.h; sourceTree = "<group>"; };
-		DC62B9351EC91E25004C4A10 /* LJ_DirToolNavigatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_DirToolNavigatorController.m; sourceTree = "<group>"; };
-		DC62B9361EC91E25004C4A10 /* LJ_FileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_FileInfo.h; sourceTree = "<group>"; };
-		DC62B9371EC91E25004C4A10 /* LJ_FileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_FileInfo.m; sourceTree = "<group>"; };
-		DC62B9381EC91E25004C4A10 /* LJ_FileInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_FileInfoController.h; sourceTree = "<group>"; };
-		DC62B9391EC91E25004C4A10 /* LJ_FileInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_FileInfoController.m; sourceTree = "<group>"; };
-		DC62B93A1EC91E25004C4A10 /* LJ_HomeDirViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_HomeDirViewController.h; sourceTree = "<group>"; };
-		DC62B93B1EC91E25004C4A10 /* LJ_HomeDirViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_HomeDirViewController.m; sourceTree = "<group>"; };
-		DC62B93C1EC91E25004C4A10 /* LJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJAlertView.h; sourceTree = "<group>"; };
-		DC62B93D1EC91E25004C4A10 /* LJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJAlertView.m; sourceTree = "<group>"; };
-		DC62B93E1EC91E25004C4A10 /* SandBoxPreviewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandBoxPreviewTool.h; sourceTree = "<group>"; };
-		DC62B93F1EC91E25004C4A10 /* SandBoxPreviewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandBoxPreviewTool.m; sourceTree = "<group>"; };
 		DCCE72191EC8F239008E576F /* 沙盒查看工具.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "沙盒查看工具.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCE721D1EC8F239008E576F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCCE721F1EC8F239008E576F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +38,25 @@
 		DCCE72281EC8F239008E576F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCCE722B1EC8F239008E576F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCCE722D1EC8F239008E576F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE840711EF8BE3A00D8EEBD /* back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@2x.png"; sourceTree = "<group>"; };
+		DCE840721EF8BE3A00D8EEBD /* back_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@3x.png"; sourceTree = "<group>"; };
+		DCE840731EF8BE3A00D8EEBD /* GenericFolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GenericFolderIcon.png; sourceTree = "<group>"; };
+		DCE840741EF8BE3A00D8EEBD /* lj_Pictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lj_Pictures.png; sourceTree = "<group>"; };
+		DCE840751EF8BE3A00D8EEBD /* lj_unknow_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lj_unknow_icon.png; sourceTree = "<group>"; };
+		DCE840761EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_DirToolNavigatorController.h; sourceTree = "<group>"; };
+		DCE840771EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_DirToolNavigatorController.m; sourceTree = "<group>"; };
+		DCE840781EF8BE3A00D8EEBD /* LJ_FileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_FileInfo.h; sourceTree = "<group>"; };
+		DCE840791EF8BE3A00D8EEBD /* LJ_FileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_FileInfo.m; sourceTree = "<group>"; };
+		DCE8407A1EF8BE3A00D8EEBD /* LJ_FileInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_FileInfoController.h; sourceTree = "<group>"; };
+		DCE8407B1EF8BE3A00D8EEBD /* LJ_FileInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_FileInfoController.m; sourceTree = "<group>"; };
+		DCE8407C1EF8BE3A00D8EEBD /* LJ_HomeDirViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_HomeDirViewController.h; sourceTree = "<group>"; };
+		DCE8407D1EF8BE3A00D8EEBD /* LJ_HomeDirViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_HomeDirViewController.m; sourceTree = "<group>"; };
+		DCE8407E1EF8BE3A00D8EEBD /* LJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJAlertView.h; sourceTree = "<group>"; };
+		DCE8407F1EF8BE3A00D8EEBD /* LJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJAlertView.m; sourceTree = "<group>"; };
+		DCE840801EF8BE3A00D8EEBD /* SandBoxPreviewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandBoxPreviewTool.h; sourceTree = "<group>"; };
+		DCE840811EF8BE3A00D8EEBD /* SandBoxPreviewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandBoxPreviewTool.m; sourceTree = "<group>"; };
+		DCE8408D1EF8BE4600D8EEBD /* SuspensionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspensionButton.h; sourceTree = "<group>"; };
+		DCE8408E1EF8BE4600D8EEBD /* SuspensionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspensionButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,38 +70,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC62B92D1EC91E25004C4A10 /* SandBoxPreviewTool */ = {
-			isa = PBXGroup;
-			children = (
-				DC62B92E1EC91E25004C4A10 /* iconSource */,
-				DC62B9341EC91E25004C4A10 /* LJ_DirToolNavigatorController.h */,
-				DC62B9351EC91E25004C4A10 /* LJ_DirToolNavigatorController.m */,
-				DC62B9361EC91E25004C4A10 /* LJ_FileInfo.h */,
-				DC62B9371EC91E25004C4A10 /* LJ_FileInfo.m */,
-				DC62B9381EC91E25004C4A10 /* LJ_FileInfoController.h */,
-				DC62B9391EC91E25004C4A10 /* LJ_FileInfoController.m */,
-				DC62B93A1EC91E25004C4A10 /* LJ_HomeDirViewController.h */,
-				DC62B93B1EC91E25004C4A10 /* LJ_HomeDirViewController.m */,
-				DC62B93C1EC91E25004C4A10 /* LJAlertView.h */,
-				DC62B93D1EC91E25004C4A10 /* LJAlertView.m */,
-				DC62B93E1EC91E25004C4A10 /* SandBoxPreviewTool.h */,
-				DC62B93F1EC91E25004C4A10 /* SandBoxPreviewTool.m */,
-			);
-			path = SandBoxPreviewTool;
-			sourceTree = "<group>";
-		};
-		DC62B92E1EC91E25004C4A10 /* iconSource */ = {
-			isa = PBXGroup;
-			children = (
-				DC62B92F1EC91E25004C4A10 /* back_icon@2x.png */,
-				DC62B9301EC91E25004C4A10 /* back_icon@3x.png */,
-				DC62B9311EC91E25004C4A10 /* GenericFolderIcon.png */,
-				DC62B9321EC91E25004C4A10 /* lj_Pictures.png */,
-				DC62B9331EC91E25004C4A10 /* lj_unknow_icon.png */,
-			);
-			path = iconSource;
-			sourceTree = "<group>";
-		};
 		DCCE72101EC8F239008E576F = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +89,7 @@
 		DCCE721B1EC8F239008E576F /* 沙盒查看工具 */ = {
 			isa = PBXGroup;
 			children = (
-				DC62B92D1EC91E25004C4A10 /* SandBoxPreviewTool */,
+				DCE8406F1EF8BE3A00D8EEBD /* SandBoxPreviewTool */,
 				DCCE721F1EC8F239008E576F /* AppDelegate.h */,
 				DCCE72201EC8F239008E576F /* AppDelegate.m */,
 				DCCE72221EC8F239008E576F /* ViewController.h */,
@@ -138,6 +109,40 @@
 				DCCE721D1EC8F239008E576F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCE8406F1EF8BE3A00D8EEBD /* SandBoxPreviewTool */ = {
+			isa = PBXGroup;
+			children = (
+				DCE8408D1EF8BE4600D8EEBD /* SuspensionButton.h */,
+				DCE8408E1EF8BE4600D8EEBD /* SuspensionButton.m */,
+				DCE840701EF8BE3A00D8EEBD /* iconSource */,
+				DCE840761EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.h */,
+				DCE840771EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.m */,
+				DCE840781EF8BE3A00D8EEBD /* LJ_FileInfo.h */,
+				DCE840791EF8BE3A00D8EEBD /* LJ_FileInfo.m */,
+				DCE8407A1EF8BE3A00D8EEBD /* LJ_FileInfoController.h */,
+				DCE8407B1EF8BE3A00D8EEBD /* LJ_FileInfoController.m */,
+				DCE8407C1EF8BE3A00D8EEBD /* LJ_HomeDirViewController.h */,
+				DCE8407D1EF8BE3A00D8EEBD /* LJ_HomeDirViewController.m */,
+				DCE8407E1EF8BE3A00D8EEBD /* LJAlertView.h */,
+				DCE8407F1EF8BE3A00D8EEBD /* LJAlertView.m */,
+				DCE840801EF8BE3A00D8EEBD /* SandBoxPreviewTool.h */,
+				DCE840811EF8BE3A00D8EEBD /* SandBoxPreviewTool.m */,
+			);
+			path = SandBoxPreviewTool;
+			sourceTree = "<group>";
+		};
+		DCE840701EF8BE3A00D8EEBD /* iconSource */ = {
+			isa = PBXGroup;
+			children = (
+				DCE840711EF8BE3A00D8EEBD /* back_icon@2x.png */,
+				DCE840721EF8BE3A00D8EEBD /* back_icon@3x.png */,
+				DCE840731EF8BE3A00D8EEBD /* GenericFolderIcon.png */,
+				DCE840741EF8BE3A00D8EEBD /* lj_Pictures.png */,
+				DCE840751EF8BE3A00D8EEBD /* lj_unknow_icon.png */,
+			);
+			path = iconSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,13 +203,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC62B9421EC91E25004C4A10 /* GenericFolderIcon.png in Resources */,
-				DC62B9411EC91E25004C4A10 /* back_icon@3x.png in Resources */,
+				DCE840841EF8BE3A00D8EEBD /* GenericFolderIcon.png in Resources */,
+				DCE840831EF8BE3A00D8EEBD /* back_icon@3x.png in Resources */,
 				DCCE722C1EC8F239008E576F /* LaunchScreen.storyboard in Resources */,
 				DCCE72291EC8F239008E576F /* Assets.xcassets in Resources */,
-				DC62B9441EC91E25004C4A10 /* lj_unknow_icon.png in Resources */,
-				DC62B9431EC91E25004C4A10 /* lj_Pictures.png in Resources */,
-				DC62B9401EC91E25004C4A10 /* back_icon@2x.png in Resources */,
+				DCE840861EF8BE3A00D8EEBD /* lj_unknow_icon.png in Resources */,
+				DCE840851EF8BE3A00D8EEBD /* lj_Pictures.png in Resources */,
+				DCE840821EF8BE3A00D8EEBD /* back_icon@2x.png in Resources */,
 				DCCE72271EC8F239008E576F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,14 +222,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCCE72241EC8F239008E576F /* ViewController.m in Sources */,
-				DC62B9491EC91E25004C4A10 /* LJAlertView.m in Sources */,
-				DC62B9461EC91E25004C4A10 /* LJ_FileInfo.m in Sources */,
+				DCE8408B1EF8BE3A00D8EEBD /* LJAlertView.m in Sources */,
+				DCE840881EF8BE3A00D8EEBD /* LJ_FileInfo.m in Sources */,
 				DCCE72211EC8F239008E576F /* AppDelegate.m in Sources */,
-				DC62B94A1EC91E25004C4A10 /* SandBoxPreviewTool.m in Sources */,
+				DCE8408C1EF8BE3A00D8EEBD /* SandBoxPreviewTool.m in Sources */,
 				DCCE721E1EC8F239008E576F /* main.m in Sources */,
-				DC62B9451EC91E25004C4A10 /* LJ_DirToolNavigatorController.m in Sources */,
-				DC62B9471EC91E25004C4A10 /* LJ_FileInfoController.m in Sources */,
-				DC62B9481EC91E25004C4A10 /* LJ_HomeDirViewController.m in Sources */,
+				DCE8408F1EF8BE4600D8EEBD /* SuspensionButton.m in Sources */,
+				DCE840871EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.m in Sources */,
+				DCE840891EF8BE3A00D8EEBD /* LJ_FileInfoController.m in Sources */,
+				DCE8408A1EF8BE3A00D8EEBD /* LJ_HomeDirViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -49,8 +49,8 @@
     
     NSString * type= [[self.fileName componentsSeparatedByString:@"."] lastObject];
     UIView * top_View = nil;
-    if ([type isEqualToString:@"json"] || [type isEqualToString:@"html"] || [type isEqualToString:@"js"] || [type isEqualToString:@"pdf"] || [type isEqualToString:@"docx"] || [type isEqualToString:@"xlsx"] || [type isEqualToString:@"ppt"] || [type isEqualToString:@"xlsx"] || [type isEqualToString:@"css"]) {
-          //go webView  when .json .js .html .ppt .pdf .docx .css file
+    if ([type isEqualToString:@"html"] || [type isEqualToString:@"js"] || [type isEqualToString:@"pdf"] || [type isEqualToString:@"docx"] || [type isEqualToString:@"xlsx"] || [type isEqualToString:@"ppt"] || [type isEqualToString:@"xlsx"] || [type isEqualToString:@"css"]) {
+          //go webView  when .js .html .ppt .pdf .docx .css file
           NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:self.filePath]];
           [self.webView loadRequest:request];
           top_View = self.webView;
@@ -106,26 +106,95 @@
             top_View = imageView;
           }
       }else if( [type isEqualToString:@"plist"]){
+          //.plist
           NSMutableDictionary *dataDictionary = [[NSMutableDictionary alloc] initWithContentsOfFile:self.filePath];
           NSString *jsonString = [self changeDicToString:dataDictionary];
           if (jsonString) {
             self.tView.text = jsonString;
             top_View = self.tView;
+          }else{
+              UILabel * lb = [[UILabel alloc] init];
+              lb.text = @"数据为空哦~";
+              lb.textColor = [UIColor darkGrayColor];
+              lb.textAlignment = NSTextAlignmentCenter;
+              [self.view addSubview:lb];
+              top_View = lb;
+          }
+      }else if( [type isEqualToString:@"json"]){
+          //.json
+          NSData *data=[NSData dataWithContentsOfFile:self.filePath];
+          if(data){
+              NSError *error;
+              NSDictionary * dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+              NSString *jsonString = [self dictionaryToJson:dataDictionary];
+              if (jsonString && !error) {
+                  self.tView.text = jsonString;
+                  top_View = self.tView;
+              }else{
+                  NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:self.filePath]];
+                  [self.webView loadRequest:request];
+                  top_View = self.webView;
+              }
+          }else{
+              NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:self.filePath]];
+              [self.webView loadRequest:request];
+              top_View = self.webView;
           }
       }else{
-          //other file ,not support
-          UILabel * lb = [[UILabel alloc] init];
-          lb.text = @"暂不支持的文件格式";
-          lb.textColor = [UIColor darkGrayColor];
-          lb.textAlignment = NSTextAlignmentCenter;
-          [self.view addSubview:lb];
-          top_View = lb;
+          NSError * error = nil;
+          NSString * aString = [NSString stringWithContentsOfFile:self.filePath encoding:NSUTF8StringEncoding error:&error];
+          if (error || !aString) {
+              //other file ,not support
+              UILabel * lb = [[UILabel alloc] init];
+              lb.text = @"暂不支持的文件格式";
+              lb.textColor = [UIColor darkGrayColor];
+              lb.textAlignment = NSTextAlignmentCenter;
+              [self.view addSubview:lb];
+              top_View = lb;
+          }else if(aString && [aString isKindOfClass:[NSString class]]){
+              NSDictionary * dict = [self parseJSONStringToNSDictionary:aString];
+              if (dict && [dict isKindOfClass:[NSDictionary class]]) {
+                  NSString * formatString = [self dictionaryToJson:dict];
+                  if (formatString) {
+                      self.tView.text = formatString;
+                      top_View = self.tView;
+                  }else{
+                      self.tView.text = aString;
+                      top_View = self.tView;
+                  }
+              }else{
+                  self.tView.text = aString;
+                  top_View = self.tView;
+              }
+          }
       }
       [self addFileInfoViewWithTopView:top_View];
 }
 
+ - (NSDictionary *)parseJSONStringToNSDictionary:(NSString *)JSONString {
+    NSData *JSONData = [JSONString dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *responseJSON = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingMutableLeaves error:nil];
+    return responseJSON;
+}
+
+- (id)dictionaryToJson:(NSDictionary *)dic
+{
+    if([dic isKindOfClass:[NSDictionary class]] && dic){
+        NSError *parseError = nil;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&parseError];
+        if (parseError || !jsonData) {
+            return [self changeDicToString:dic];
+        }
+        return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }else{
+        return nil;
+    }
+}
+
+
 //字段转换成格式化的字符串
 - (NSString *)changeDicToString:(NSDictionary *)dict{
+    if(!dict)return @"";
     NSMutableString * s = [NSMutableString string];
     [s appendString:@"{\n"];
     for (NSString * key in dict.allKeys) {

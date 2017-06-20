@@ -10,7 +10,7 @@
 
 @interface LJ_FileInfo : NSObject
 
-//获取制定路径文件的md5值，不能为文件夹
+//获取制定路径文件的md5值，不能为文件夹，文件路径不能为空
 + (NSString*)getFileMD5WithPath:(NSString*)path;
 
 //查找指定路径下文件信息
