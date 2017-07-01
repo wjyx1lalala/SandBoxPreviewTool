@@ -22,7 +22,10 @@
 }
 
 - (IBAction)click:(id)sender {
+    //whether show log about the file path
     [[SandBoxPreviewTool sharedTool] setOpenLog:YES];
+    
+    //open or close sandbox preview
     [[SandBoxPreviewTool sharedTool] autoOpenCloseApplicationDiskDirectoryPanel];
 }
 
