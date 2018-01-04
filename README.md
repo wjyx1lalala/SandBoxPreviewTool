@@ -35,13 +35,17 @@ pod  "SandBoxPreviewTool"
 #### 部分样例
 
 初次打开的样子，测试按钮自行忽略
-![image](http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/Screen%20ShotiPhoneX.png)
+<br/>
+<img src="http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/Screen%20ShotiPhoneX.png" width = "300" height = "649.6"/>
 
 通过AirDrop或三方分享 共享文件
-![image](http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/share.png)
+<br/>
+<img src="http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/share.png" width = "300" height = "649.6"/>
 
 查看某个文件下所有子文件 可以方便得查看类似于SDWebImage工具的图片缓存
-![image](http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/img.png)
+<br/>
+<img src="http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/img.png" width = "300" height = "649.6"/>
 
 查看沙盒中下载的文件，MD5值可以用于校验文件是否下载出错。
-![image](http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/cv.png)
+<br/>
+<img src="http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/cv.png" width = "300" height = "649.6"/>
