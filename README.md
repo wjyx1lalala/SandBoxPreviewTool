@@ -35,13 +35,13 @@ pod  "SandBoxPreviewTool"
 #### 部分样例
 
 初次打开的样子，测试按钮自行忽略
-![image](http://nuomiadai.oss-cn-shanghai.aliyuncs.com/sandbox_dir.jpg)
+![image](http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/Screen%20ShotiPhoneX.png)
 
 通过AirDrop或三方分享 共享文件
-![image](http://nuomiadai.oss-cn-shanghai.aliyuncs.com/sharedb.jpg)
+![image](http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/share.png)
 
 查看某个文件下所有子文件 可以方便得查看类似于SDWebImage工具的图片缓存
-![image](http://nuomiadai.oss-cn-shanghai.aliyuncs.com/fileDir.jpg)
+![image](http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/img.png)
 
-在Mac电脑上查看手机中写入的数据库db
-![image](http://nuomiadai.oss-cn-shanghai.aliyuncs.com/localdb.jpg)
+查看沙盒中下载的文件，MD5值可以用于校验文件是否下载出错。
+![image](http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/cv.png)
