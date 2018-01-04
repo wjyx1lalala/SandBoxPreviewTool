@@ -142,7 +142,7 @@
           }
       }else{
           NSError * error = nil;
-          NSString * aString = [NSString stringWithContentsOfFile:self.filePath encoding:NSUTF8StringEncoding error:&error];
+          NSString * aString = [type isEqualToString:@"note"] ? nil : [NSString stringWithContentsOfFile:self.filePath encoding:NSUTF8StringEncoding error:&error];
           if (error || !aString) {
               //other file ,not support
               UILabel * lb = [[UILabel alloc] init];
@@ -280,7 +280,7 @@
     //文件修改日期
     fileModDate =  [dateFormatter stringFromDate:self.fileInfo[NSFileModificationDate]];
     //md5
-    fileMD5 = [LJ_FileInfo getFileMD5WithPath:self.filePath];
+    fileMD5 = [self.filePath hasSuffix:@".note"] ? @"管道文件，无法获取MD5值" :  [LJ_FileInfo getFileMD5WithPath:self.filePath];
     self.md5 = fileMD5;
     NSArray * infoArr = @[fileMD5?:@"",fileSize?:@"",fileCreateDate?:@"",fileModDate?:@""];
     NSArray * infoKeyArr = @[@"MD5值：",@"文件大小：",@"创建时间：",@"修改时间："];

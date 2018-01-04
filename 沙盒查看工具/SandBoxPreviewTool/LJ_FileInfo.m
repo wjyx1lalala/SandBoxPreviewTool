@@ -130,6 +130,9 @@ done:
 }
 
 + (NSString *)judgeFileTypeWithPath:(NSString *)filePath{
+    if ([filePath hasSuffix:@".note"]) {
+        return  @"未知文件类型";
+    }
     NSData * data = [NSData dataWithContentsOfFile:filePath];
     if (data.length<2) {
         return  @"未知文件类型";
