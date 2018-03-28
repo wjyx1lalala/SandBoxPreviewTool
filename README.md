@@ -1,10 +1,16 @@
 # SandBoxPreviewTool
 
-### 一两行代码就能查看ios沙盒文件。debug好帮手
+### 一两行代码就能轻松查看ios应用沙盒文件。debug好帮手
+
+很多项目中，都或多或少有文件下载，db存储或其他类型文件缓存，音视频图片缓存等等。
+
+可是，真机或者调试阶段要查看这些文件就需要各位开发同学进入对应沙盒路径文件夹自行查看，非常不方便。对于真机，更是麻烦。
+
+建议各位同发同学都可以在项目提测QA阶段，添加悬浮球，一键跳转沙盒，方便试试查看缓存文件信息或者分享文件到PC。
 
 json，plist，html，css，log日志，图片等支持应用内查看。
 
-sqlite，realm等文件，支持AirDrop，微信QQ分享后查看。
+sqlite，realm等文件（会自动忽略部分管道文件），支持AirDrop，微信QQ分享后查看。
 
 附带文件MD5信息，适合文件下载后查看本地文件信息，校验文件完整性。
 
@@ -13,19 +19,45 @@ sqlite，realm等文件，支持AirDrop，微信QQ分享后查看。
 ```
 #import <SandBoxPreviewTool.h>
 
-//点击事件中调用
+//按钮点击事件中调用
 - (IBAction)click:(id)sender {
     //[[SandBoxPreviewTool sharedTool] setOpenLog:YES];是否开启控制台打印文件路径。不用可自行忽略
     [[SandBoxPreviewTool sharedTool] autoOpenCloseApplicationDiskDirectoryPanel];
 }
 ```
 
-查看文件MD5值
+赠送附加功能1：查看文件MD5值，建议有重要文件下载、上传都严格校验文件MD5摘要，防止文件网络请求过程出错或被篡改等等意外。
 ```
 #import <LJ_FileInfo.h>
 
-//xx_filePath 本地沙盒文件路径（不能设置为文件夹路径）
+//xx_filePath 文件沙盒路径（不能设置为文件夹路径）
 [LJ_FileInfo getFileMD5WithPath: xx_filePath];
+
+```
+赠送附加功能2：悬浮球
+```在AppDelegate.m中导入
+#import <SandBoxPreviewTool/SuspensionButton.h>//悬浮球按钮
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    ...创建window以后向window添加悬浮球
+    [self createDebugSuspensionButton];
+
+}
+
+// 创建悬浮球按钮
+- (void)createDebugSuspensionButton{
+   //自行添加哦~ 记得上线前要去除哦。 QA或者调试开发阶段可以这么使用
+  SuspensionButton * button = [[SuspensionButton alloc] initWithFrame:CGRectMake(-5, [UIScreen mainScreen].bounds.size.height/2 - 100 , 50, 50) color:[UIColor colorWithRed:135/255.0 green:216/255.0 blue:80/255.0 alpha:1]];
+    button.leanType = SuspensionViewLeanTypeEachSide;
+    [button addTarget:self action:@selector(pushToDebugPage) forControlEvents:UIControlEventTouchUpInside];
+    [self.window.rootViewController.view addSubview:button];
+}
+
+//open or close sandbox preview
+- (void)pushToDebugPage{
+    [[SandBoxPreviewTool sharedTool] autoOpenCloseApplicationDiskDirectoryPanel];
+}
+
 ```
 #### 安装
 ```
