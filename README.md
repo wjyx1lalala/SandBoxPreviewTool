@@ -81,3 +81,8 @@ pod  "SandBoxPreviewTool"
 查看沙盒中下载的文件，MD5值可以用于校验文件是否下载出错。
 <br/>
 <img src="http://toobob-merchant.oss-cn-shanghai.aliyuncs.com/git/cv.png" width = "300" height = "649.6"/>
+
+
+#### 其他建议
+其实开发中大家一样可以使用在info.plist中添加UIFileSharingEnabled为true。
+这样可以很容易的itunes中查看Documents文件目录下文件内容。
