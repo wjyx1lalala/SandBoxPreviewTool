@@ -86,3 +86,4 @@ pod  "SandBoxPreviewTool"
 #### 其他建议
 其实开发中大家一样可以使用在info.plist中添加UIFileSharingEnabled为true。
 这样可以很容易的itunes中查看Documents文件目录下文件内容。
+但是如果没有特殊需要，上线前一定要关闭该功能哦~
