@@ -9,6 +9,7 @@
 #import "LJ_HomeDirViewController.h"
 #import "LJ_FileInfoController.h" //文件详情页面
 #import "LJ_FileInfo.h"  //文件检查类
+#import "SLUnilityObject.h"
 
 @interface LJ_HomeDirViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -102,14 +103,14 @@
         cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
         if ([infoDict[@"FileType"] hasPrefix:@"image"]) {
             //图片类型
-            cell.imageView.image = [UIImage imageNamed:@"lj_Pictures"];
+            cell.imageView.image = [SLUnilityObject imageWithName:@"lj_Pictures"]; //[UIImage imageNamed:@"lj_Pictures"];
         }else{
             //unknow_icon  未知文件类型
-            cell.imageView.image = [UIImage imageNamed:@"lj_unknow_icon"];
+            cell.imageView.image = [SLUnilityObject imageWithName:@"lj_unknow_icon"]; //[UIImage imageNamed:@"lj_unknow_icon"];
         }
     }else{
         //文件夹模式
-        cell.imageView.image = [UIImage imageNamed:@"GenericFolderIcon.png"];
+        cell.imageView.image = [SLUnilityObject imageWithName:@"GenericFolderIcon"]; //[UIImage imageNamed:@"GenericFolderIcon.png"];
         cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
     }
     if(infoDict[NSFileModificationDate]){
