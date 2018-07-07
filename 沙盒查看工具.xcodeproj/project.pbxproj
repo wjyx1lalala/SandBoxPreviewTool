@@ -7,17 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1EC9CF208DA67D00897D0B /* SandBoxPreviewTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B1EC9CE208DA67D00897D0B /* SandBoxPreviewTool.bundle */; };
+		4B1EC9D2208DA8A500897D0B /* SLUnilityObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1EC9D1208DA8A500897D0B /* SLUnilityObject.m */; };
 		DCCE721E1EC8F239008E576F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE721D1EC8F239008E576F /* main.m */; };
 		DCCE72211EC8F239008E576F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE72201EC8F239008E576F /* AppDelegate.m */; };
 		DCCE72241EC8F239008E576F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE72231EC8F239008E576F /* ViewController.m */; };
 		DCCE72271EC8F239008E576F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCE72251EC8F239008E576F /* Main.storyboard */; };
 		DCCE72291EC8F239008E576F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCCE72281EC8F239008E576F /* Assets.xcassets */; };
 		DCCE722C1EC8F239008E576F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCE722A1EC8F239008E576F /* LaunchScreen.storyboard */; };
-		DCE840821EF8BE3A00D8EEBD /* back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE840711EF8BE3A00D8EEBD /* back_icon@2x.png */; };
-		DCE840831EF8BE3A00D8EEBD /* back_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE840721EF8BE3A00D8EEBD /* back_icon@3x.png */; };
-		DCE840841EF8BE3A00D8EEBD /* GenericFolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE840731EF8BE3A00D8EEBD /* GenericFolderIcon.png */; };
-		DCE840851EF8BE3A00D8EEBD /* lj_Pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE840741EF8BE3A00D8EEBD /* lj_Pictures.png */; };
-		DCE840861EF8BE3A00D8EEBD /* lj_unknow_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE840751EF8BE3A00D8EEBD /* lj_unknow_icon.png */; };
 		DCE840871EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE840771EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.m */; };
 		DCE840881EF8BE3A00D8EEBD /* LJ_FileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE840791EF8BE3A00D8EEBD /* LJ_FileInfo.m */; };
 		DCE840891EF8BE3A00D8EEBD /* LJ_FileInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8407B1EF8BE3A00D8EEBD /* LJ_FileInfoController.m */; };
@@ -28,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B1EC9CE208DA67D00897D0B /* SandBoxPreviewTool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SandBoxPreviewTool.bundle; sourceTree = "<group>"; };
+		4B1EC9D0208DA8A500897D0B /* SLUnilityObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLUnilityObject.h; sourceTree = "<group>"; };
+		4B1EC9D1208DA8A500897D0B /* SLUnilityObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLUnilityObject.m; sourceTree = "<group>"; };
 		DCCE72191EC8F239008E576F /* 沙盒查看工具.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "沙盒查看工具.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCE721D1EC8F239008E576F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCCE721F1EC8F239008E576F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,11 +38,6 @@
 		DCCE72281EC8F239008E576F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCCE722B1EC8F239008E576F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCCE722D1EC8F239008E576F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCE840711EF8BE3A00D8EEBD /* back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@2x.png"; sourceTree = "<group>"; };
-		DCE840721EF8BE3A00D8EEBD /* back_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@3x.png"; sourceTree = "<group>"; };
-		DCE840731EF8BE3A00D8EEBD /* GenericFolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GenericFolderIcon.png; sourceTree = "<group>"; };
-		DCE840741EF8BE3A00D8EEBD /* lj_Pictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lj_Pictures.png; sourceTree = "<group>"; };
-		DCE840751EF8BE3A00D8EEBD /* lj_unknow_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lj_unknow_icon.png; sourceTree = "<group>"; };
 		DCE840761EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_DirToolNavigatorController.h; sourceTree = "<group>"; };
 		DCE840771EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_DirToolNavigatorController.m; sourceTree = "<group>"; };
 		DCE840781EF8BE3A00D8EEBD /* LJ_FileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_FileInfo.h; sourceTree = "<group>"; };
@@ -114,9 +109,9 @@
 		DCE8406F1EF8BE3A00D8EEBD /* SandBoxPreviewTool */ = {
 			isa = PBXGroup;
 			children = (
+				4B1EC9CE208DA67D00897D0B /* SandBoxPreviewTool.bundle */,
 				DCE8408D1EF8BE4600D8EEBD /* SuspensionButton.h */,
 				DCE8408E1EF8BE4600D8EEBD /* SuspensionButton.m */,
-				DCE840701EF8BE3A00D8EEBD /* iconSource */,
 				DCE840761EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.h */,
 				DCE840771EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.m */,
 				DCE840781EF8BE3A00D8EEBD /* LJ_FileInfo.h */,
@@ -129,20 +124,10 @@
 				DCE8407F1EF8BE3A00D8EEBD /* LJAlertView.m */,
 				DCE840801EF8BE3A00D8EEBD /* SandBoxPreviewTool.h */,
 				DCE840811EF8BE3A00D8EEBD /* SandBoxPreviewTool.m */,
+				4B1EC9D0208DA8A500897D0B /* SLUnilityObject.h */,
+				4B1EC9D1208DA8A500897D0B /* SLUnilityObject.m */,
 			);
 			path = SandBoxPreviewTool;
-			sourceTree = "<group>";
-		};
-		DCE840701EF8BE3A00D8EEBD /* iconSource */ = {
-			isa = PBXGroup;
-			children = (
-				DCE840711EF8BE3A00D8EEBD /* back_icon@2x.png */,
-				DCE840721EF8BE3A00D8EEBD /* back_icon@3x.png */,
-				DCE840731EF8BE3A00D8EEBD /* GenericFolderIcon.png */,
-				DCE840741EF8BE3A00D8EEBD /* lj_Pictures.png */,
-				DCE840751EF8BE3A00D8EEBD /* lj_unknow_icon.png */,
-			);
-			path = iconSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,13 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE840841EF8BE3A00D8EEBD /* GenericFolderIcon.png in Resources */,
-				DCE840831EF8BE3A00D8EEBD /* back_icon@3x.png in Resources */,
+				4B1EC9CF208DA67D00897D0B /* SandBoxPreviewTool.bundle in Resources */,
 				DCCE722C1EC8F239008E576F /* LaunchScreen.storyboard in Resources */,
 				DCCE72291EC8F239008E576F /* Assets.xcassets in Resources */,
-				DCE840861EF8BE3A00D8EEBD /* lj_unknow_icon.png in Resources */,
-				DCE840851EF8BE3A00D8EEBD /* lj_Pictures.png in Resources */,
-				DCE840821EF8BE3A00D8EEBD /* back_icon@2x.png in Resources */,
 				DCCE72271EC8F239008E576F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +211,7 @@
 				DCE8408F1EF8BE4600D8EEBD /* SuspensionButton.m in Sources */,
 				DCE840871EF8BE3A00D8EEBD /* LJ_DirToolNavigatorController.m in Sources */,
 				DCE840891EF8BE3A00D8EEBD /* LJ_FileInfoController.m in Sources */,
+				4B1EC9D2208DA8A500897D0B /* SLUnilityObject.m in Sources */,
 				DCE8408A1EF8BE3A00D8EEBD /* LJ_HomeDirViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

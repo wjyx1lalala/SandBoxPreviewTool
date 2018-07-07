@@ -9,6 +9,7 @@
 #import "LJ_DirToolNavigatorController.h"
 #import "LJ_HomeDirViewController.h"
 #import "SuspensionButton.h"
+#import "SLUnilityObject.h"
 @interface LJ_DirToolNavigatorController ()<UIGestureRecognizerDelegate>
 
 @end
@@ -57,7 +58,8 @@
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button setBackgroundImage:[UIImage imageNamed:@"back_icon"] forState:UIControlStateNormal];
+//        [button setBackgroundImage:[UIImage imageNamed:@"back_icon"] forState:UIControlStateNormal];
+        [button setBackgroundImage:[SLUnilityObject imageWithName:@"back_icon"] forState:UIControlStateNormal];
         button.frame = (CGRect){CGPointZero, button.currentBackgroundImage.size};
         [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
