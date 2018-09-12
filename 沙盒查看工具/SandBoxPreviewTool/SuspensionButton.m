@@ -129,7 +129,6 @@ double radians(float degrees) {
         }];
     }else{
         self.alpha = .7;
-        NSLog(@"pan state : %zd", p.state);
     }
 }
 

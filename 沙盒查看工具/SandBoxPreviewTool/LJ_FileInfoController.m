@@ -33,9 +33,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpUI];
+#ifdef DEBUG
     if ([SandBoxPreviewTool sharedTool].openLog) {
-      NSLog(@"%@",self.filePath);
+        NSLog(@"%@",self.filePath);
     }
+#endif
 }
 
 - (void)setUpUI{
