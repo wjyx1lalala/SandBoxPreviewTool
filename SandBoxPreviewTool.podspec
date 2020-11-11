@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = 'https://github.com/wjyx1lalala/SandBoxPreviewTool'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { "nuomi" => "49238605@qq.com" }
+  s.author           = { "nuomi" => "492838605@qq.com" }
   s.source           = { :git => "https://github.com/wjyx1lalala/SandBoxPreviewTool.git", :tag => "1.2" }
   s.ios.deployment_target = '9.0'
   s.source_files     = 'SandBoxPreviewTool/Classes/*'
