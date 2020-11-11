@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SandBoxPreviewTool'
-  s.version          = '1.2'
+  s.version          = '1.2.1'
   s.summary          = 'Make iOS preview sandbox in your app more easy'
   s.description      = <<-DESC
                       help you preview sandbox easy in you application with one line of code
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/wjyx1lalala/SandBoxPreviewTool'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { "nuomi" => "492838605@qq.com" }
-  s.source           = { :git => "https://github.com/wjyx1lalala/SandBoxPreviewTool.git", :tag => "1.2" }
+  s.source           = { :git => "https://github.com/wjyx1lalala/SandBoxPreviewTool.git", :tag => "1.2.1" }
   s.ios.deployment_target = '9.0'
   s.source_files     = 'SandBoxPreviewTool/Classes/*'
   s.resource         = 'SandBoxPreviewTool/Assets/*.bundle'

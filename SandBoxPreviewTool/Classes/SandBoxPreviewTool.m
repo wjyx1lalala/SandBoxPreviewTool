@@ -38,7 +38,7 @@ static SandBoxPreviewTool *_singleton;
 
 #pragma mark 打开或关闭应用磁盘目录面板
 - (void)autoOpenCloseApplicationDiskDirectoryPanel{
-    UIViewController *root = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    UIViewController *root = UIApplication.sharedApplication.windows[0].rootViewController;
     BOOL isEqual = root.presentedViewController == _navVC;
     if (root.presentedViewController) {
       if (isEqual) {//相同则直接隐藏  不相同，隐藏后再弹出
