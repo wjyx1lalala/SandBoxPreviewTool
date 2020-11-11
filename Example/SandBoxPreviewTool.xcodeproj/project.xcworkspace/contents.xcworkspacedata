@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:&#x6c99;&#x76d2;&#x67e5;&#x770b;&#x5de5;&#x5177;.xcodeproj">
+      location = "self:SandBoxPreviewTool.xcodeproj">
    </FileRef>
 </Workspace>

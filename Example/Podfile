@@ -1,0 +1,16 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'SandBoxPreviewTool_Example' do
+  pod 'SandBoxPreviewTool', :path => '../'
+
+  target 'SandBoxPreviewTool_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
+  end
+end

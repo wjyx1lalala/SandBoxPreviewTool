@@ -17,7 +17,7 @@ sqlite，realm等文件（会自动忽略部分管道文件），支持AirDrop�
 例如：如果你觉得自己应用中的数据库文件写的有问题，可以直接将对应的db或realm文件通过AirDrop分享到电脑后，然后通过相关应用直接输入sql语句进行debug。
 
 ```
-#import <SandBoxPreviewTool.h>
+#import <SandBoxPreviewTool/SuspensionButton.h>//悬浮球按钮
 
 //按钮点击事件中调用
 - (IBAction)click:(id)sender {
@@ -28,7 +28,7 @@ sqlite，realm等文件（会自动忽略部分管道文件），支持AirDrop�
 
 赠送附加功能1：查看文件MD5值，建议有重要文件下载、上传都严格校验文件MD5摘要，防止文件网络请求过程出错或被篡改等等意外。
 ```
-#import <LJ_FileInfo.h>
+#import <SandBoxPreviewTool/LJ_FileInfo.h>
 
 //xx_filePath 文件沙盒路径（不能设置为文件夹路径）
 [LJ_FileInfo getFileMD5WithPath: xx_filePath];
