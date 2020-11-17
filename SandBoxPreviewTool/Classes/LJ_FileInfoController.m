@@ -213,12 +213,7 @@
     if (!urlToShare) return;
     NSArray *activityItems = @[urlToShare];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc]initWithActivityItems:activityItems applicationActivities:nil];
-    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
-        [self.navigationController presentViewController:activityVC animated:YES completion:nil];
-    } else {
-        UIPopoverController *popoverController = [[UIPopoverController alloc] initWithContentViewController:activityVC];
-        [popoverController presentPopoverFromBarButtonItem:self.navigationItem.rightBarButtonItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-    }
+    [self.navigationController presentViewController:activityVC animated:YES completion:nil];
 }
 
 
