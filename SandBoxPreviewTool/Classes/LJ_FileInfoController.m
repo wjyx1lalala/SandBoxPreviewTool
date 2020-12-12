@@ -9,13 +9,14 @@
 #import "LJ_FileInfoController.h"
 #import "LJ_FileInfo.h"
 #import "SandBoxPreviewTool.h"
+#import <WebKit/WebKit.h>
 //屏幕最小值
 #define MIN_Screen ([UIScreen mainScreen].bounds.size.width <  [UIScreen mainScreen].bounds.size.height ? [UIScreen mainScreen].bounds.size.width : [UIScreen mainScreen].bounds.size.height)
 
 @interface LJ_FileInfoController ()
 
 @property (nonatomic,strong) UITextView * tView;
-@property (nonatomic,strong) UIWebView * webView;
+@property (nonatomic,strong) WKWebView * webView;
 @property (nonatomic,copy) NSString * md5;
 
 @end
@@ -347,9 +348,9 @@
     return _tView;
 }
 
-- (UIWebView *)webView{
+- (WKWebView *)webView{
     if (!_webView) {
-        _webView = [[UIWebView alloc] init];
+        _webView = [[WKWebView alloc] init];
         _webView.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:_webView];
     }
